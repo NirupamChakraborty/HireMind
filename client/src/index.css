@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+}
+.match-score__ring {
+  display: flex;
+  align-items: center;       /* was: baseline */
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 6px solid var(--ip-border);
+  background-color: var(--ip-bg-card);
+}
+
+.match-score__pct {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ip-text-muted);
+  margin-left: 0.1rem;
+  align-self: center;        /* add this line */
+}
